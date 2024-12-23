@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./favicon.svg" type="icon/svg+xml">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+      <!-- Header Section -->
+      <header class="header">
+        <h1>Welcome to the Snake Game</h1>
+        <p class="description">
+            Control the snake to eat the food, grow longer, and aim for the highest score! 
+            Use arrow keys or touch controls to play. Press the space key to pause and resume the game.
+          </p>
+      </header>
+    <div class="wrapper">
+      <div class="game-details">
+        <span class="score">Score: 0</span>
+        <span class="high-score">High Score: 0</span>
+      </div>
+      <div class="play-board"></div>
+      <div id="gameOverModal" class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <h2>Game Over</h2>
+          <p id="currentScore">Your Score: 0</p>
+          <p id="highScore">High Score: 0</p>
+        </div>
+      </div>
+      <div class="controls">
+        <<i data-key="ArrowLeft" class="fa-solid fa-arrow-left-long"></i>>
+        <i data-key="ArrowUp" class="fa-solid fa-arrow-up-long"></i>
+        <i data-key="ArrowRight" class="fa-solid fa-arrow-right-long"></i>
+        <i data-key="ArrowDown" class="fa-solid fa-arrow-down-long"></i>
+        <button class="pause-resume">Pause</button>
+      </div>
+    </div>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>© 2024 Snake Game by Abid Rafique Khan</p>
+      </footer>
+  </body>
+</html>
